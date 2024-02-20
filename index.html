@@ -15,170 +15,242 @@
 <body class="deug">
     <div class="wallpaper">
         <div class="container-lg">
-            <div class="row flex">
+            <div class="wallpaper-row flex">
                 
-                <aside class="contact contact-lg flex flex-c">
-                    <div class="contact__header">
-                        <div class="profile flex">
-                            <div class="profile__photo">
-                                <img src="./img/avatar_io.jpg" alt="">
+                <aside>
+                    <div class="contact contact-lg flex-md flex-c display-none">
+                        <div class="contact__header">
+                            <div class="profile flex">
+                                <div class="profile__photo">
+                                    <img src="./img/avatar_io.jpg" alt="">
+                                </div>
+
+                                <div class="profile__action flex display-none flex-lg">
+                                    <ul class="profile__action-list flex">
+                                        <li>
+                                            <img src="./img/circle-notch-solid.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="./img/message-solid.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="./img/ellipsis-vertical-solid.svg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="notification flex-lg display-none">
+                                <div class="notification__icon flex">
+                                    <div class="notification__icon-bg flex">
+                                        <img src="./img/bell-slash-solid.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="notification__text flex flex-c">
+                                    <h3>Ricevi notifiche di nuovi messaggi</h3>
+                                    <a href="#">Attiva notifiche Desktop</a>
+                                </div>
                             </div>
 
-                            <div class="profile__action flex display-none flex-lg">
-                                <ul class="profile__action-list flex">
-                                    <li>
-                                        <img src="./img/circle-notch-solid.svg" alt="">
+                        </div>
+                    
+                    
+                        <div class="contact__body flex flex-c">
+                            <nav class="contact__search flex-lg display-none">
+                                <div class="contact__search-icon">
+                                    <img src="./img/magnifying-glass-solid.svg" alt="">
+                                </div>
+                                <input type="search" placeholder="Cerca o inizia una nuova chat" class="contact__search-bar">
+
+                            </nav>
+
+                            <div class="contact__list flex flex-c">
+                                <ul class="flex flex-c">
+                                    <li class="flex flex-c">
+                                        <div class="contact__card flex">
+                                            <div class="contact__photo">
+                                                <img src="./img/avatar_1.jpg" alt="">
+                                            </div>
+                                            <div class="contact__name flex-lg flex-c display-none">
+                                                <div>
+                                                    <h3>Michele</h3>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                                <div class="contact__time flex-lg display-none">
+                                                    <p>16:23</p>
+                                                </div>
+                                        </div>        
+                                    </li>        
+                                    <li class="flex flex-c">
+                                        
+                                        <div class="contact__card flex">
+                                            <div class="contact__photo">
+                                                <img src="./img/avatar_2.jpg" alt="">
+                                            </div>
+                                            <div class="contact__name flex-lg flex-c display-none">
+                                                <div>
+                                                    <h3>Fabio</h3>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                                <div class="contact__time flex-lg display-none">
+                                                    <p>16:05</p>
+                                                </div>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <img src="./img/message-solid.svg" alt="">
+                                    <li class="flex flex-c">
+                                        <div class="contact__card flex">
+                                            <div class="contact__photo">
+                                                <img src="./img/avatar_3.jpg" alt="">
+                                            </div>
+                                            <div class="contact__name flex-lg flex-c display-none">
+                                                <div>
+                                                    <h3>Samuele</h3>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                                <div class="contact__time flex-lg display-none">
+                                                    <p>16:03</p>
+                                                </div>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <img src="./img/ellipsis-vertical-solid.svg" alt="">
+                                    <li class="flex flex-c">    
+                                        <div class="contact__card flex">
+                                            <div class="contact__photo">
+                                                <img src="./img/avatar_4.jpg" alt="">
+                                            </div>
+                                            <div class="contact__name flex-lg flex-c display-none">
+                                                <div>
+                                                    <h3>Alessandro B.</h3>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                                <div class="contact__time flex-lg display-none">
+                                                    <p>15:50</p>
+                                                </div>
+                                        </div>
+                                    </li>
+                                    <li class="flex flex-c">
+                                        <div class="contact__card flex">
+                                            <div class="contact__photo">
+                                                <img src="./img/avatar_5.jpg" alt="">
+                                            </div>
+                                            <div class="contact__name flex-lg flex-c display-none">
+                                                <div>
+                                                    <h3>Alessandro L.</h3>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                                <div class="contact__time flex-lg display-none">
+                                                    <p>15:45</p>
+                                                </div>
+                                        </div>
+                                    </li>
+                                    <li class="flex flex-c">
+                                        <div class="contact__card flex">
+                                            <div class="contact__photo">
+                                                <img src="./img/avatar_6.jpg" alt="">
+                                            </div>
+                                            <div class="contact__name flex-lg flex-c display-none">
+                                                <div>
+                                                    <h3>Claudia</h3>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                                <div class="contact__time flex-lg display-none">
+                                                    <p>15:40</p>
+                                                </div>
+                                        </div>
+                                        
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="notification flex-lg display-none">
-                            <div class="notification__icon flex">
-                                <div class="notification__icon-bg flex">
-                                    <img src="./img/bell-slash-solid.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="notification__text flex flex-c">
-                                <h3>Ricevi notifiche di nuovi messaggi</h3>
-                                <a href="#">Attiva notifiche Desktop</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="contact__body flex flex-c">
-                        <nav class="contact__search flex-lg display-none">
-                            <div class="contact__search-icon">
-                                <img src="./img/magnifying-glass-solid.svg" alt="">
-                            </div>
-                            <input type="search" placeholder="Cerca o inizia una nuova chat" class="contact__search-bar">
-
-                        </nav>
-                        <div class="contact__list flex flex-c">
-                            <ul>
-                                <li>
-                                    <div class="contact__card flex">
-                                        <div class="contact__photo">
-                                            <img src="./img/avatar_1.jpg" alt="">
-                                        </div>
-                                        <div class="contact__name flex-lg flex-c display-none">
-                                            <div>
-                                                <h3>Michele</h3>
-                                                <p>Lorem ipsum dolor sit amet.</p>
-                                            </div>
-                                        </div>
-                                            <div class="contact__time flex-lg display-none">
-                                                <p>16:23</p>
-                                            </div>
-                                        
-
-                                    </div>
-                                    <div class="contact__card flex">
-                                        <div class="contact__photo">
-                                            <img src="./img/avatar_2.jpg" alt="">
-                                        </div>
-                                        <div class="contact__name flex-lg flex-c display-none">
-                                            <div>
-                                                <h3>Michele</h3>
-                                                <p>Lorem ipsum dolor sit amet.</p>
-                                            </div>
-                                        </div>
-                                            <div class="contact__time flex-lg display-none">
-                                                <p>16:23</p>
-                                            </div>
-                                    </div>
-                                    <div class="contact__card flex">
-                                        <div class="contact__photo">
-                                            <img src="./img/avatar_3.jpg" alt="">
-                                        </div>
-                                        <div class="contact__name flex-lg flex-c display-none">
-                                            <div>
-                                                <h3>Michele</h3>
-                                                <p>Lorem ipsum dolor sit amet.</p>
-                                            </div>
-                                        </div>
-                                            <div class="contact__time flex-lg display-none">
-                                                <p>16:23</p>
-                                            </div>
-                                    </div>
-                                    <div class="contact__card flex">
-                                        <div class="contact__photo">
-                                            <img src="./img/avatar_4.jpg" alt="">
-                                        </div>
-                                        <div class="contact__name flex-lg flex-c display-none">
-                                            <div>
-                                                <h3>Michele</h3>
-                                                <p>Lorem ipsum dolor sit amet.</p>
-                                            </div>
-                                        </div>
-                                            <div class="contact__time flex-lg display-none">
-                                                <p>16:23</p>
-                                            </div>
-                                    </div>
-                                    <div class="contact__card flex">
-                                        <div class="contact__photo">
-                                            <img src="./img/avatar_5.jpg" alt="">
-                                        </div>
-                                        <div class="contact__name flex-lg flex-c display-none">
-                                            <div>
-                                                <h3>Michele</h3>
-                                                <p>Lorem ipsum dolor sit amet.</p>
-                                            </div>
-                                        </div>
-                                            <div class="contact__time flex-lg display-none">
-                                                <p>16:23</p>
-                                            </div>
-                                    </div>
-                                    <div class="contact__card flex">
-                                        <div class="contact__photo">
-                                            <img src="./img/avatar_6.jpg" alt="">
-                                        </div>
-                                        <div class="contact__name flex-lg flex-c display-none">
-                                            <div>
-                                                <h3>Michele</h3>
-                                                <p>Lorem ipsum dolor sit amet.</p>
-                                            </div>
-                                        </div>
-                                            <div class="contact__time flex-lg display-none">
-                                                <p>16:23</p>
-                                            </div>
-                                    </div>
-                                    
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
                 </aside>
 
-                <main class="flex flex-c">
-                    <div class="main__header container">
+                <main>
+                    <div class="container flex flex-c">
+                        <div class="main__header container">
 
-                        <div class="row flex">
-                            ciao
+                            <div class="row flex">
+                                <div class="col">
+                                    <div class="chat__card flex">
+                                        <div class="chat__photo">
+                                            <img src="./img/avatar_1.jpg" alt="">
+                                        </div>
+                                        <div class="chat__name flex-c ">
+                                            <div>
+                                                <h3>Michele</h3>
+                                                <p>Ultimo accesso oggi alla 16:26</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="chat__action flex-md display-none ">
+                                        <ul class="chat__action-list flex">
+                                            <li>
+                                                <img src="./img/magnifying-glass-solid.svg" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="./img/paperclip-solid.svg" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="./img/ellipsis-vertical-solid.svg" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        
                         </div>
-                    
-                    </div>
 
-                        <div class="main__body ">
-                            <div class="container">
-                                <div class="row">
-                                    body
+                        <div class="main__body">
+                            <div class="container flex">
+                                <div class="row flex flex-c">
+                                    <div class="col user-message flex flex-c">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio animi non alias veniam impedit sit, quas cumque inventore? Iure, consequatur.</h3>
+                                        <h5>19:13</h5>
+                                    </div>
+
+
+                                    <div class="col friend-message flex flex-c">
+                                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum beatae nulla obcaecati et tenetur fugiat aperiam, eaque aliquam labore dolore!</h3>
+                                        <h5>19:20</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="main__action">
+                        <div class="main__action flex">
                             
-                            <div class="row">
-                                footer
+                            <div class="row flex">
+                                <div class="col">
+                                    <div class="main__action-emoticon flex-md display-none">
+                                        <img src="./img/face-smile-regular.svg" alt="">     
+                                    </div>
+                                </div>
+                                <div class="col-chat">
+                                    <div class="main__action-chat flex">
+                                        <input type="search" placeholder="Scrivi un messaggio" class="main__action-bar">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="main__action-vocal flex-md display-none">
+                                        <img src="./img/microphone-solid.svg" alt="">
+                                    </div>
+                                </div>
+                                
+
+                                
+                                
+
                             </div>
-                        </div>
+                               
+                        </div>        
+
+                    </div>           
 
                     
                 </main>

@@ -26,6 +26,25 @@ body *{
     
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 ol,
 ul,
 menu {
@@ -115,14 +134,12 @@ img{
 /* layout */
 
 
-body {
-    background-color: #019789;
-}
-
 
 
 
 /* ----------CONTACT---------- */
+
+
 
 .contact {
     width: 80px;
@@ -237,16 +254,31 @@ body {
     color: var(--medium-gray);
     
 }
- .contact__list {
-    height: calc(100vh - 80px);
- }
+
+ 
+
+.contact__list ul {
+    gap: 2px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.contact__list ul li:last-child {
+    flex-grow: 1;
+}
+
+.contact__list ul li:last-child > * {
+    height: 100%;
+    align-items: flex-start;
+}
+
 
 .contact__card {
     height: 80px;
     align-items: center;
     gap: 12px;
     background-color: white;
-    border-bottom: 2px solid var(--light-gray);
+    
     padding: 12px;
 
 }
@@ -292,7 +324,7 @@ main {
 .main__header {
     height: 80px;
     width: 100%;
-    
+    border-left: 1px solid var(--medium-gray);
     background-color: var(--light-gray);
     
 }
@@ -300,19 +332,149 @@ main {
 .main__header .row {
     height: 100%;
     width: 100%;
-    padding: 10px;
+    justify-content: space-between;
+    padding-right: 24px;
+    
+}
+
+.chat__photo img {
+   
+    width: 68px;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    
+}
+
+.chat__card {
+    height: 80px;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid var(--light-gray);
+    padding: 12px;
+
+}
+
+.chat__name h3 {
+    font-weight: 1000;
+}
+
+.chat__name p {
+    font-weight: 500;
+    color: var(--medium-gray);
+}
+
+.chat__action {
+    align-items: center;
+}
+
+.chat__action-list {
+    gap: 24px;
+   
+
+}
+
+.chat__action img {
+    height: 80px;
+    padding: 24px 0;
+    filter: var(--medium-gray-filter);
+
 }
 
 
+
+
+
+/* --------main-body----------- */
 .main__body {
-    flex-grow: 1;
+    height: calc(100vh - 160px);
+    background-image: url(../img/mine.jpg);
+    border-right: 12px solid white;
 }
+
+.main__body .row {
+    padding: 5% 10%;
+    gap: 32px;
+}
+
+.main__body .col {
+    width: 70%;
+    padding: 24px 24px 6px 24px;
+    border-radius: 12px;
+    
+    
+}
+
+.main__body .col h5 {
+    text-align: right;
+    color: var(--medium-gray);
+}
+
+.main__body .user-message {
+    background-color: #D5FABA;
+    align-self: flex-end;
+}
+
+.main__body .friend-message {
+    background-color: white;
+}
+
+/* -----------main-action------------- */
+
 
 .main__action {
     height: 80px;
+    
+    gap: 24px;
+    background-color:var(--light-gray)
+    
+}
+
+.main__action .row {
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 12px;
     width: 100%;
-    align-self: flex-end;
-    background-color: var(--light-gray);
+
+}
+
+.main__action-bar {
+    background-color: white;
+}
+
+.main__action-icon {
+    height: 100%;
+}
+.main__action-icon img {
+    height: 100%;
+    padding: 6px 0;
+    filter: var(--medium-gray-filter);
+    
+}
+
+.main__action-chat {
+    height: 100%;
+}
+
+.col-chat {
+    flex-grow: 1;
+    padding: 12px;
+    height: 80px;
+}
+
+.main__action-chat input {
+    border: none;
+    color: var(--medium-gray);
+    width: 100%;
+    padding: 0 12px;
+    border-radius: 12px;
+    
+}
+.main__action img {
+    height: 80px;
+    padding: 24px 0;
+    filter: var(--medium-gray-filter);
 
 }
 
@@ -348,9 +510,17 @@ main {
 @media (min-width: 768px) {
 
 
+    .flex-md {
+        display: flex;
+    }
 
+    .contact__list {
+        height: calc(100vh - 79px);
+    }
 
-
+    .main__body .col {
+        gap: 30px;
+    }
 
 
 }
@@ -364,6 +534,11 @@ main {
 
 @media (min-width: 992px) {
 
+    body {
+        background: rgb(219,219,211);
+    background: linear-gradient(0deg, rgba(219,219,211,1) 80%, rgba(0,150,136,1) 80%);
+    }
+
     .flex-lg {
         display: flex;
         
@@ -374,20 +549,28 @@ main {
     }
 
     .contact__card {
-        margin-right: 18px;
+        width: 356px;
     }
-    .profile {
-        border-right: 2px solid var(--medium-gray);
+
+    .contact__list {
+        height: calc(100vh - 303px);
     }
+
+
+    .main__body {
+        height: calc(100vh - 220px);
+        
+    }
+    
 
     .profile__action-list {
         padding-right: 12px;
     
     }
     
-    .container-lg .row {
+    .container-lg  {
         width: 80%;
-        max-height: calc(100vh - 60px);
+        max-height: calc (100vh - 60px);
         margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -395,7 +578,9 @@ main {
     
     }
 
-
+    .main__body .col {
+        gap: 60px;
+    }
 
 
 
