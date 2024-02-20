@@ -260,7 +260,7 @@ img{
 .contact__list ul {
     gap: 2px;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .contact__list ul li:last-child {
@@ -390,7 +390,7 @@ main {
 .main__body {
     height: calc(100vh - 160px);
     background-image: url(../img/mine.jpg);
-    border-right: 12px solid white;
+    overflow-y: scroll;
 }
 
 .main__body .row {
@@ -518,10 +518,8 @@ main {
         height: calc(100vh - 79px);
     }
 
-    .main__body .col {
-        gap: 30px;
-    }
-
+    
+    
 
 }
 
@@ -536,7 +534,8 @@ main {
 
     body {
         background: rgb(219,219,211);
-    background: linear-gradient(0deg, rgba(219,219,211,1) 80%, rgba(0,150,136,1) 80%);
+        background: linear-gradient(0deg, rgba(219,219,211,1) 80%, rgba(0,150,136,1) 80%);
+    
     }
 
     .flex-lg {
@@ -548,9 +547,7 @@ main {
         width: 380px;
     }
 
-    .contact__card {
-        width: 356px;
-    }
+    
 
     .contact__list {
         height: calc(100vh - 303px);
@@ -578,9 +575,7 @@ main {
     
     }
 
-    .main__body .col {
-        gap: 60px;
-    }
+    
 
 
 
