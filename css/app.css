@@ -309,7 +309,7 @@ img{
     margin: 0 5px;
 }
 
-.contact__list ul {
+.contact__list {
     gap: 2px;
     height: 100%;
     overflow-y: auto;
@@ -318,9 +318,7 @@ img{
    
 }
 
-.contact__list ul li {
-    border-bottom: 1px solid var(--medium-gray);
-}
+
 
 
 
@@ -330,7 +328,7 @@ img{
     align-items: center;
     gap: 12px;
     background-color: white;
-    
+    border-bottom: 2px solid var(--light-gray);
     padding: 12px;
 
 }
@@ -442,7 +440,7 @@ main {
 
 /* --------main-body----------- */
 .main__body {
-    height: calc(100vh - 160px);
+    height: calc(100% - 160px);
     background-image: url(../img/mine.jpg);
     overflow-y: auto;
 }
@@ -606,19 +604,7 @@ main {
     .contact__card {
         width: 100%;
     }
-
-    
-
-    .contact__list {
-        height: calc(100vh - 311px);
-    }
-
-
-    .main__body {
-        height: calc(100vh - 220px);
-        
-    }
-    
+   
 
     .profile__action-list {
         padding-right: 12px;
@@ -637,6 +623,16 @@ main {
 
     .menu:hover .menu-content {
         display: flex;
+    }
+
+    .contact__photo img {
+   
+        width: 68px;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        
     }
 
 
